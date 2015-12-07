@@ -2,7 +2,7 @@ import sbt._
 import Keys._
 import com.typesafe.sbt.pgp.PgpKeys._
 
-crossScalaVersions := Seq("2.11.7", "2.10.5")
+crossScalaVersions := Seq("2.11.7", "2.10.6")
 
 val commonSettings = Seq(
   organization := "me.chrons",
@@ -77,7 +77,7 @@ lazy val diodeReact = project.in(file("diode-react"))
   .settings(
     name := "diode-react",
     libraryDependencies ++= Seq(
-      "com.github.japgolly.scalajs-react" %%% "core" % "0.10.0"
+      "com.github.japgolly.scalajs-react" %%% "core" % "0.10.2"
     ),
     scmInfo := Some(ScmInfo(
       url("https://github.com/ochrons/diode"),
